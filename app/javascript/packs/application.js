@@ -11,6 +11,7 @@ import "channels"
 // Loads all Semantic javascripts
 //= require semantic-ui
 //= require jquery
+//= require jquery_ujs
 
 Rails.start()
 Turbolinks.start()
