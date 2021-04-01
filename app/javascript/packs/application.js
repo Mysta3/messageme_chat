@@ -22,7 +22,12 @@ window.$ = window.JQuery = JQuery;
 
 // waits for turbolinks to load in order to activate dropdown on navbar
 $(document).on('turbolinks:load', function(){
-  $('.ui.dropdown')
-  .dropdown()
-;
+  $('.ui.dropdown').dropdown();
+  $('.message .close')
+  .on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
 })
+
+
+
