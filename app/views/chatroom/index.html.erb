@@ -9,16 +9,8 @@
     <div class="ui fluid raise card chatbox">
       <div class="content">
         <div class="ui small feed">
-        <% @messages.each do |message| %>
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em><%= message.user.username %></em> >> <%= message.body %>
-                </div>
-              </div>
-            </div>
-          <% end %>
-          </div>
+        <%= render 'message' %>
+        </div>
         </div>
         <div class="extra content">
         <div class="ui inverted segment">
