@@ -13,12 +13,12 @@
         </div>
         </div>
         <div class="extra content">
-        <div class="ui inverted segment">
+        <%= form_for(@message, html: {class: "ui inverted segment", role: "form"}, url: message_path) do |f| %>
           <div class="ui fluid icon input">
-            <input placeholder="Enter a message" type="text">
-            <i class="bordered inverted orange icon edit"></i> 
+            <%= f.text_field :body %>
+            <%= f.button'<i class="bordered inverted orange icon edit"></i>'.html_safe %>
           </div>
-        </div>
+        <% end %>
       </div>
       </div>
     </div>

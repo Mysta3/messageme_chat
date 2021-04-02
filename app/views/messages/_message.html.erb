@@ -1,9 +1,8 @@
-
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em><%= message.user.username  %></em> >> <%= message.body %> 
-                  <div><small class="time_sent">Sent: <%= time_ago_in_words(message.created_at)%>, ago</small></div>
-                </div>
-              </div>
-            </div>
+<div class="event">
+  <div class="content">
+    <div class="summary">
+      <em><%= message.user.username  %></em> >> <%= message.body %> 
+      <div><small class="time_sent">Sent: <%= time_ago_in_words(message.created_at)%>, ago</small></div>
+    </div>
+  </div>
+</div>
