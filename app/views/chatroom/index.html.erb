@@ -7,17 +7,17 @@
 <div class="ui grid  ">
   <div class="eleven wide column">
     <div class="ui fluid raise card chatbox">
-      <div class="content">
-        <div class="ui small feed">
+      <div class="content" id="messages">
+        <div class="ui small feed" id="message-container">
         <%= render @messages %>
         </div>
-        </div>
-        <div class="extra content">
+      </div>
+      <div id="extra-content" class="extra content">
         <%= form_for(@message, html: {class: "ui inverted segment", role: "form"}, url: message_path) do |f| %>
-          <div class="ui fluid icon input">
-            <%= f.text_field :body %>
-            <%= f.button'<i class="bordered inverted orange icon edit"></i>'.html_safe %>
-          </div>
+        <div class="ui fluid icon input">
+          <%= f.text_field :body %>
+          <%= f.button'<i class="bordered inverted orange icon edit"></i>'.html_safe %>
+        </div>
         <% end %>
       </div>
       </div>

@@ -1,13 +1,23 @@
 @import "semantic-ui";
-*{
-  overflow-x:hidden
-}
 
 .chatbox{
   height: 450px;
+  border: 1px solid black;
 }
 
+#messages {
+  height: 10em;
+  overflow: auto;
+}
+
+#extra-content{
+  background-color: rgb(27, 28, 29);
+}
 
 .time_sent{
   color:grey;
+}
+
+.input button {
+  display: none;
 }
